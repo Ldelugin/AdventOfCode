@@ -12,4 +12,9 @@ if (!isValid)
     throw new InvalidOperationException($"The input is not valid: {notValidReason}");
 }
 
-var grid = new Grid(input);
+var map = new Grid(input);
+var simulator = new SeaCucumberSimulator(map);
+
+var steps = simulator.SimulateUntilNoMovementsDetected();
+
+Console.WriteLine($"The first step on which no sea cucumber moves: {steps}");
