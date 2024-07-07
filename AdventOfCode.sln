@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9781EB48-6F39-4CC9-8031-DF7613734810}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{629ADAB8-EA5C-4D3D-9DED-CDF428F00216}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarSweep", "src\SonarSweep\SonarSweep.csproj", "{CCC1E7CB-B10A-472A-9D44-DDCC5B2A11C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarSweepTests", "tests\SonarSweepTests\SonarSweepTests.csproj", "{F9D911E1-B420-4114-8D2D-29107EEF331B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CCC1E7CB-B10A-472A-9D44-DDCC5B2A11C2} = {9781EB48-6F39-4CC9-8031-DF7613734810}
+		{F9D911E1-B420-4114-8D2D-29107EEF331B} = {629ADAB8-EA5C-4D3D-9DED-CDF428F00216}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCC1E7CB-B10A-472A-9D44-DDCC5B2A11C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC1E7CB-B10A-472A-9D44-DDCC5B2A11C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC1E7CB-B10A-472A-9D44-DDCC5B2A11C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC1E7CB-B10A-472A-9D44-DDCC5B2A11C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9D911E1-B420-4114-8D2D-29107EEF331B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D911E1-B420-4114-8D2D-29107EEF331B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D911E1-B420-4114-8D2D-29107EEF331B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D911E1-B420-4114-8D2D-29107EEF331B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
