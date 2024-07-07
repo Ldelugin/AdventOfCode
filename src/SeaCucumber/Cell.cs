@@ -11,5 +11,9 @@ public class Cell
         this.Value = value;
     }
     
-    public char Value { get; }
+    public char Value { get; private set; }
+
+    public void SetEmpty() => this.Value = Empty;
+    public void SetEastFacing() => this.Value = EastFacing;
+    public void SetSouthFacing() => this.Value = SouthFacing;
 }
