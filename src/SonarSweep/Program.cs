@@ -1,3 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using SonarSweep;
 
-Console.WriteLine("Hello, World!");
+const string reportFileName = "input.txt";
+
+var reportInspector = new ReportInspector(reportFileName);
+var totalIncreases = reportInspector.InspectTotalIncreases();
+
+Console.WriteLine($"The total increases of the '{reportFileName}' report = {totalIncreases}");
