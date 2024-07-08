@@ -14,5 +14,5 @@ public interface IMeasurementCalculator
     /// <returns>
     /// The number of increases in the list of measurements.
     /// </returns>
-    int CalculateIncreases(List<int> measurements);
+    int CalculateIncreases(List<int>? measurements);
 }

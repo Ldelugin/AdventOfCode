@@ -14,8 +14,16 @@ public class MeasurementCalculator : IMeasurementCalculator
     /// <returns>
     /// The number of increases in the list of measurements.
     /// </returns>
-    public int CalculateIncreases(List<int> measurements)
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when the <paramref name="measurements"/> parameter is null.
+    /// </exception>
+    public int CalculateIncreases(List<int>? measurements)
     {
+        if (measurements == null)
+        {
+            throw new ArgumentNullException(nameof(measurements));
+        }
+
         var increases = 0;
         return increases;
     }
