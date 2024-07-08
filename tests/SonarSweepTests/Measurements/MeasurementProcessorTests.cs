@@ -57,7 +57,7 @@ public class MeasurementProcessorTests
         this.measurementCalculatorMock.Setup(mock => mock.CalculateIncreases(measurementsToReturn)).Returns(expectedIncreases);
         
         // Act
-        this.processor.Process();
+        this.processor.Process(filePath);
 
         // Assert
         this.measurementReaderMock.Verify(mock => mock.ReadMeasurements(filePath), Times.Once);

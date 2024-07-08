@@ -31,8 +31,8 @@ public class MeasurementProcessor
     /// <summary>
     /// Processes the measurements.
     /// </summary>
-    public void Process()
+    /// <param name="filePath">The file path to the measurements.</param>
+    public void Process(string filePath)
     {
-        
     }
 }
