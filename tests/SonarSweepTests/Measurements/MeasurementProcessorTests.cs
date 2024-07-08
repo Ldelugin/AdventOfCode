@@ -1,3 +1,4 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using SonarSweep;
@@ -17,5 +18,26 @@ public class MeasurementProcessorTests
     {
         this.processor = new MeasurementProcessor(this.measurementReaderMock.Object,
             this.measurementCalculatorMock.Object, this.consoleMock.Object);
+    }
+
+    [TestMethod]
+    public void Constructor_ThrowsArgumentNullException_WhenMeasurementReaderIsNull()
+    {
+        Assert.ThrowsException<ArgumentNullException>(() => new MeasurementProcessor(measurementReader: null,
+            this.measurementCalculatorMock.Object, this.consoleMock.Object));
+    }
+    
+    [TestMethod]
+    public void Constructor_ThrowsArgumentNullException_WhenMeasurementCalculatorIsNull()
+    {
+        Assert.ThrowsException<ArgumentNullException>(() => new MeasurementProcessor(this.measurementReaderMock.Object,
+            measurementCalculator: null, this.consoleMock.Object));
+    }
+    
+    [TestMethod]
+    public void Constructor_ThrowsArgumentNullException_WhenConsoleIsNull()
+    {
+        Assert.ThrowsException<ArgumentNullException>(() => new MeasurementProcessor(this.measurementReaderMock.Object,
+            this.measurementCalculatorMock.Object, console: null));
     }
 }
