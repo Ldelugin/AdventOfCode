@@ -27,4 +27,12 @@ public class MeasurementProcessor
         this.measurementCalculator = measurementCalculator ?? throw new ArgumentNullException(nameof(measurementCalculator));
         this.console = console ?? throw new ArgumentNullException(nameof(console));
     }
+
+    /// <summary>
+    /// Processes the measurements.
+    /// </summary>
+    public void Process()
+    {
+        
+    }
 }
