@@ -13,8 +13,8 @@ public class MeasurementCalculatorTests
     private static IEnumerable<object[]> CalculateIncreasesData()
     {
         yield return new object[] { new List<int>(), 0 };
-        yield return new object[] { new List<int> { 1, 2, 3, 4, 5, 6, 7 }, 7 };
-        yield return new object[] { new List<int> { 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1 }, 7 };
+        yield return new object[] { new List<int> { 1, 2, 3, 4, 5, 6, 7 }, 6 };
+        yield return new object[] { new List<int> { 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1 }, 6 };
         yield return new object[] { new List<int> { 199, 200, 208, 210, 200, 207, 240, 269, 260, 263 }, 7 };
     }
 
