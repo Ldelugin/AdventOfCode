@@ -34,5 +34,8 @@ public class MeasurementProcessor
     /// <param name="filePath">The file path to the measurements.</param>
     public void Process(string filePath)
     {
+        var measurements = this.measurementReader.ReadMeasurements(filePath);
+        var increaseCount = this.measurementCalculator.CalculateIncreases(measurements);
+        this.console.WriteLine($"Number of increases: {increaseCount}");
     }
 }
