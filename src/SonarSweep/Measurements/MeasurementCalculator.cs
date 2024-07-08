@@ -16,6 +16,7 @@ public class MeasurementCalculator : IMeasurementCalculator
     /// </returns>
     public int CalculateIncreases(List<int> measurements)
     {
-        throw new NotImplementedException();
+        var increases = 0;
+        return increases;
     }
 }
