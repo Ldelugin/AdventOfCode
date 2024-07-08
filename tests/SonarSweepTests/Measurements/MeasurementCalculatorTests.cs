@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SonarSweep.Measurements;
@@ -26,5 +27,15 @@ public class MeasurementCalculatorTests
         
         // Assert
         Assert.AreEqual(expected: expected, result);
+    }
+    
+    [TestMethod]
+    public void CalculateIncreases_ShouldThrowArgumentNullException_WhenMeasurementsIsNull()
+    {
+        // Arrange
+        List<int>? measurements = null;
+        
+        // Act & Assert
+        Assert.ThrowsException<ArgumentNullException>(() => calculator.CalculateIncreases(measurements));
     }
 }
