@@ -20,8 +20,8 @@ public class MeasurementProcessor
     /// <paramref name="measurementCalculator"/> is passed as null or
     /// <paramref name="console"/> is passed as null.
     /// </exception>
-    public MeasurementProcessor(IMeasurementReader measurementReader, IMeasurementCalculator measurementCalculator,
-        IConsole console)
+    public MeasurementProcessor(IMeasurementReader? measurementReader, IMeasurementCalculator? measurementCalculator,
+        IConsole? console)
     {
         this.measurementReader = measurementReader ?? throw new ArgumentNullException(nameof(measurementReader));
         this.measurementCalculator = measurementCalculator ?? throw new ArgumentNullException(nameof(measurementCalculator));
