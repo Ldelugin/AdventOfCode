@@ -25,6 +25,13 @@ public class MeasurementCalculator : IMeasurementCalculator
         }
 
         var increases = 0;
+        for (var i = 1; i < measurements.Count; i++)
+        {
+            if (measurements[i] > measurements[i - 1])
+            {
+                increases++;
+            }
+        }
         return increases;
     }
 }
