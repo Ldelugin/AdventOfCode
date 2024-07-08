@@ -1,4 +1,4 @@
-namespace SonarSweep;
+namespace SonarSweep.Measurements;
 
 /// <summary>
 /// An interface for calculating increases in measurements.
